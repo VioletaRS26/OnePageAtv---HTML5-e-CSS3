@@ -33,6 +33,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+    #check{
+        display: none;
+    }
+    label{
+        font-size: 2em;
+        padding-right: 10px;
+        color: $white;
+    }
     img {
         width: 100px;
         height: 100px;
@@ -43,14 +51,6 @@ header {
         justify-content: flex-start;
         align-items: flex-end;
         height: 50px;
-        button {
-            width: 50px;
-            height: 50px;
-            background-color: transparent;
-            color: $white;
-            font-size: 30px;
-            border: 0;
-        }
         ul {
             display: flex;
             flex-direction: column;
@@ -58,8 +58,11 @@ header {
             align-items: flex-start;
             background-color: $black;
             visibility: hidden;
+            top: 60px;
+            right: -100%;
             li {
                 list-style: none;
+                border-bottom: 1px solid #a9a9a9;
                 a {
                     color: white;
                     text-decoration: none;
@@ -69,11 +72,16 @@ header {
             }
         }
     }
+    #check:checked ~ ul{
+        right: 0;
+    }
     
 }
+
 main{
-    background: url(../img/Destaque_o20.png) 100px;
+    background: url(../img/Destaque_o20.png) ;
     height: 70vh;
+    align-items: center;
     h1{
         display: flex;
         justify-content: center;
@@ -96,7 +104,7 @@ main{
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            button {
+            label {
                 display: none;
             }
             ul {

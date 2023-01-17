@@ -20,6 +20,14 @@ header {
   justify-content: space-between;
   align-items: flex-start;
 }
+header #check {
+  display: none;
+}
+header label {
+  font-size: 2em;
+  padding-right: 10px;
+  color: #FFFFFF;
+}
 header img {
   width: 100px;
   height: 100px;
@@ -31,14 +39,6 @@ header nav {
   align-items: flex-end;
   height: 50px;
 }
-header nav button {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  color: #FFFFFF;
-  font-size: 30px;
-  border: 0;
-}
 header nav ul {
   display: flex;
   flex-direction: column;
@@ -46,9 +46,12 @@ header nav ul {
   align-items: flex-start;
   background-color: #111111;
   visibility: hidden;
+  top: 60px;
+  right: -100%;
 }
 header nav ul li {
   list-style: none;
+  border-bottom: 1px solid #a9a9a9;
 }
 header nav ul li a {
   color: white;
@@ -56,10 +59,14 @@ header nav ul li a {
   padding: 10px;
   line-height: 30px;
 }
+header #check:checked ~ ul {
+  right: 0;
+}
 
 main {
-  background: url(../img/Destaque_o20.png) 100px;
+  background: url(../img/Destaque_o20.png);
   height: 70vh;
+  align-items: center;
 }
 main h1 {
   display: flex;
@@ -82,7 +89,7 @@ main h1 {
     justify-content: center;
     align-items: center;
   }
-  header nav button {
+  header nav label {
     display: none;
   }
   header nav ul {
