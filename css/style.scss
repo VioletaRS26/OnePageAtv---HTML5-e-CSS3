@@ -63,6 +63,7 @@ header {
                 list-style: none;
                 padding: 20px;
                 border-bottom: 1px solid #a9a9a9;
+                font-size: 1em;
                 a {
                     color: white;
                     text-decoration: none;
@@ -79,15 +80,30 @@ header {
 }
 
 main{
-    background: url(../img/Destaque_o20.png) ;
     height: 70vh;
-    align-items: center;
+    background: url(../img/Destaque_o20.png);
+    background-size: cover;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     h1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 2.5em;
     }
-    
+    h2{
+        font-size: 1em;
+        margin: 20px 0px 50px 0px;
+    }
+    .htmlC{
+        color: $htmlColor1;
+    }
+    .cssC{
+        color: $cssColor1;
+    }
+    .jsC{
+        color: $jsColor1;
+    }
 }
 
 //Tablets em modo paisagem ou maior 
@@ -153,6 +169,9 @@ section {
     .container{
         max-width: 960px;
     }
+    main{
+        height: 70vh;
+    }
 }
 
 @media(min-width: 1200px){
@@ -161,5 +180,14 @@ section {
     }
     .container{
         max-width: 1140px;
+    }
+    main{
+        height: 70vh;
+        h1{
+            font-size: 4em;
+        }
+        h2{
+            font-size: 2.5em;
+        }
     }
 }
