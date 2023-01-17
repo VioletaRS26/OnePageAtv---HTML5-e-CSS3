@@ -20,14 +20,6 @@ header {
   justify-content: space-between;
   align-items: flex-start;
 }
-header #check {
-  display: none;
-}
-header label {
-  font-size: 2em;
-  padding-right: 10px;
-  color: #FFFFFF;
-}
 header img {
   width: 100px;
   height: 100px;
@@ -39,18 +31,24 @@ header nav {
   align-items: flex-end;
   height: 50px;
 }
+header nav #check {
+  display: none;
+}
+header nav label {
+  font-size: 2em;
+  padding-right: 15px;
+  color: #FFFFFF;
+}
 header nav ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: #111111;
-  visibility: hidden;
-  top: 60px;
+  background-color: #343538;
+  position: fixed;
+  top: 50px;
   right: -100%;
+  height: 100vh;
 }
 header nav ul li {
   list-style: none;
+  padding: 20px;
   border-bottom: 1px solid #a9a9a9;
 }
 header nav ul li a {
@@ -93,11 +91,20 @@ main h1 {
     display: none;
   }
   header nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    visibility: visible;
+    position: static;
+    height: auto;
+    background-color: transparent;
+  }
+  header nav ul li {
+    float: left;
+    border: 0;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  header nav ul li a:hover {
+    color: #E44D26;
   }
 }
 section {

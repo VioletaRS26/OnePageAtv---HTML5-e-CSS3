@@ -7,6 +7,7 @@ $jsColor1: #E5A228;
 $jsColor2: #F1BF26;
 $black: #111111;
 $white: #FFFFFF;
+$cinza: #343538;
 
 
 // Reset CSS
@@ -33,14 +34,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    #check{
-        display: none;
-    }
-    label{
-        font-size: 2em;
-        padding-right: 10px;
-        color: $white;
-    }
+    
     img {
         width: 100px;
         height: 100px;
@@ -51,17 +45,23 @@ header {
         justify-content: flex-start;
         align-items: flex-end;
         height: 50px;
+        #check{
+            display: none;
+        }
+        label{
+            font-size: 2em;
+            padding-right: 15px;
+            color: $white;
+        }
         ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            background-color: $black;
-            visibility: hidden;
-            top: 60px;
+            background-color: $cinza;
+            position: fixed;
+            top: 50px;
             right: -100%;
+            height: 100vh;
             li {
                 list-style: none;
+                padding: 20px;
                 border-bottom: 1px solid #a9a9a9;
                 a {
                     color: white;
@@ -108,11 +108,21 @@ main{
                 display: none;
             }
             ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: flex-start;
-                visibility: visible;
+                position: static;
+                height: auto;
+                background-color: transparent;
+                
+                li{
+                    float: left;
+                    border: 0;
+                    a{
+                        text-decoration: none;
+                        color: $white;
+                    }
+                    a:hover{
+                        color:$htmlColor1;
+                    }
+                }
             }
         }  
     }
