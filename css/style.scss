@@ -1,11 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family= Sofia+Sans & display = swap');
+// Cores
+$htmlColor1: #E44D26;
+$htmlColor2: #F16529;
+$cssColor1: #264DE4;
+$cssColor2: #2965F1;
+$jsColor1: #E5A228;
+$jsColor2: #F1BF26;
+$black: #111111;
+$white: #FFFFFF;
 
-*{
+
+// Reset CSS
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: 'Sofia Sans', sans-serif;
-    font-size: 1em;
+/*
+xs: 0,        //Smartphones em modo retrato
+sm: 576px,    //Smartphones em modo paisagem ou Tablets em modo retrato
+md: 768px,    //Tablets em modo paisagem
+lg: 992px,    //Desktops
+xl: 1200px,   //Desktops com alta definição HD e FHD
+xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
+*/
+
+
+//First Mobile
+header {
+    background-color: $black;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50px;
+        button {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            color: $white;
+            font-size: 30px;
+            border: 0;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: $black;
+            visibility: hidden;
+            li {
+                list-style: none;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+    
+}
+main{
+    background: url(../img/Destaque_o20.png) 100px;
+    height: 70vh;
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+//Tablets em modo paisagem ou maior 
+@media (min-width: 768px ) {
+    header {
+        height: 80px;
+        img {
+            width: 160px;
+            height: 160px;
+        }
+        nav {
+            height: 80px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            button {
+                display: none;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                visibility: visible;
+            }
+        }  
+    }
+}
+
+
+
+section {
+    height: 70vh;
+}
+
+#HTML {
+    background-color: $htmlColor2;
+}
+
+#CSS {
+    background-color: $cssColor2;
+}
+
+#JS {
+    background-color: $jsColor2;
+}
+
+@media(min-width: 992px){
+    body{
+        background-color: crimson;
+    }
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media(min-width: 1200px){
+    body{
+        background-color: gray;
+    }
+    .container{
+        max-width: 1140px;
+    }
 }
