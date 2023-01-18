@@ -73,7 +73,7 @@ main {
   text-align: center;
 }
 main h1 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 main h2 {
   font-size: 1em;
@@ -115,6 +115,10 @@ main .jsC {
   text-decoration: none;
 }
 
+section {
+  height: 70vh;
+}
+
 @media (min-width: 768px) {
   header {
     height: 80px;
@@ -148,31 +152,5 @@ main .jsC {
   }
   header nav ul li a:hover {
     color: #E44D26;
-  }
-}
-section {
-  height: 70vh;
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-  main {
-    height: 70vh;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
-  main {
-    height: 70vh;
-  }
-  main h1 {
-    font-size: 4em;
-  }
-  main h2 {
-    font-size: 2.5em;
   }
 }/*# sourceMappingURL=style.css.map */
