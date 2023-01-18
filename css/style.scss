@@ -25,7 +25,14 @@ lg: 992px,    //Desktops
 xl: 1200px,   //Desktops com alta definição HD e FHD
 xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
 */
-
+.Flex2{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+section {
+    height: 100vh;
+}
 
 //First Mobile
 header {
@@ -108,13 +115,49 @@ main{
 }
 //corpo
 #HTML{
-    background-color: $htmlColor2;
+    background-color: $htmlColor2;        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 128px;
+        height: 128px;
+        margin: 10px 10px;
+    }
+
+    
 }
 #CSS{
     background-color: $cssColor2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 128px;
+        height: 128px;
+        margin: 10px 10px;
+    }
 }
 #JS{
     background-color: $jsColor2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 128px;
+        height: 128px;
+        margin: 10px 10px;
+    }
+}
+#text{
+    text-align: center;
+    margin: 20px 20px;
+    p{
+        text-align: justify;
+    }
 }
 //Links Úteis
 #LU{
@@ -124,17 +167,14 @@ main{
     h2{
         margin-bottom: 10px;
     }
-    .Flex2{
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
+    
 }
-section {
-    height: 70vh;
-}
+
 //Tablets em modo paisagem ou maior 
 @media (min-width: 768px ) {
+    section{
+        height: 90vh;
+    }
     header {
         height: 80px;
         img {
@@ -169,5 +209,53 @@ section {
             }
         }  
     }
+    //Banner
+    main{
+        font-size: 2em;
+    }
+    //Corpo
+    #HTML{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 300px;
+            height: 300px;
+            border: 90px;
+        }
+    }
+    #CSS{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 300px;
+            height: 300px;
+            border: 90px;
+        }
+    }
+    #JS{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        img{
+            width: 300px;
+            height: 300px;
+            border: 90px;
+        }
+    }
+    #text{
+        padding: 50px 0px 100px 0px;
+        border: 70px;
+        font-size: 1.5em;
+    }
+    //Conteúdo
+
+
+    //Rodapé
 }
 

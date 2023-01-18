@@ -12,6 +12,16 @@ lg: 992px,    //Desktops
 xl: 1200px,   //Desktops com alta definição HD e FHD
 xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
 */
+.Flex2 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+section {
+  height: 100vh;
+}
+
 header {
   background-color: #111111;
   height: 50px;
@@ -91,14 +101,49 @@ main .jsC {
 
 #HTML {
   background-color: #F16529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#HTML img {
+  width: 128px;
+  height: 128px;
+  margin: 10px 10px;
 }
 
 #CSS {
   background-color: #2965F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#CSS img {
+  width: 128px;
+  height: 128px;
+  margin: 10px 10px;
 }
 
 #JS {
   background-color: #F1BF26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#JS img {
+  width: 128px;
+  height: 128px;
+  margin: 10px 10px;
+}
+
+#text {
+  text-align: center;
+  margin: 20px 20px;
+}
+#text p {
+  text-align: justify;
 }
 
 #LU {
@@ -109,17 +154,11 @@ main .jsC {
 #LU h2 {
   margin-bottom: 10px;
 }
-#LU .Flex2 {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-section {
-  height: 70vh;
-}
 
 @media (min-width: 768px) {
+  section {
+    height: 90vh;
+  }
   header {
     height: 80px;
   }
@@ -152,5 +191,46 @@ section {
   }
   header nav ul li a:hover {
     color: #E44D26;
+  }
+  main {
+    font-size: 2em;
+  }
+  #HTML {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #HTML img {
+    width: 300px;
+    height: 300px;
+    border: 90px;
+  }
+  #CSS {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  #CSS img {
+    width: 300px;
+    height: 300px;
+    border: 90px;
+  }
+  #JS {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #JS img {
+    width: 300px;
+    height: 300px;
+    border: 90px;
+  }
+  #text {
+    padding: 50px 0px 100px 0px;
+    border: 70px;
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=style.css.map */
