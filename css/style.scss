@@ -8,6 +8,7 @@ $jsColor2: #F1BF26;
 $black: #111111;
 $white: #FFFFFF;
 $cinza: #343538;
+$cinzaC: #d3d3d3;
 
 
 // Reset CSS
@@ -103,6 +104,28 @@ main{
     }
     .jsC{
         color: $jsColor1;
+    }
+}
+//corpo
+//Links Úteis
+.Flex2{
+    display: flex;
+    align-items: center;
+}
+#LU{
+    padding: 50px 0px;
+    background: $cinzaC;
+
+}
+#destaqueSobre{
+    display: none;
+}
+#textoSobre{
+    color: #ffff;
+    padding: 0px 10px;
+
+    h2{
+        margin-bottom: 10px;
     }
 }
 
