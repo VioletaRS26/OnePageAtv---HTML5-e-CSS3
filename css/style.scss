@@ -15,6 +15,7 @@ $cinzaC: #d3d3d3;
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /*
@@ -187,17 +188,15 @@ main{
     }
 }
 //Links Úteis
-#lU{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #86db94;
-
+#LU{
+    background-color: $cinzaC;
+    height: auto;
 }
 .containerL{
-    margin: 0 auto;
     h2{
         text-align: center;
+        padding-top: 20px;
+        margin-bottom: 30px;
     }
 }
 .Card{
@@ -207,12 +206,16 @@ main{
     }
     h3{
         text-align: center;
+        margin-bottom: 20px;
     }
     p a{
         text-decoration: none;
         color: $black;
+        margin-bottom: 35px;
     }
 }
+//Rodapé
+
 
 
 
@@ -262,8 +265,54 @@ main{
     }
     
     //Conteúdo
-
-
+    #HTML{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        h2,h3{
+            font-size: 1.7em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+    } 
+    #CSS{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        h2,h3{
+            font-size: 1.7em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+    }
+    #JS{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        h2,h3{
+            font-size: 1.7em;
+        }
+        p{
+            font-size: 1.1em;
+        }
+    }
+    .text{
+        font-size: 1.4em;
+    }
+    //Links Úteis
+    .containerL h2{
+        font-size: 2.5em;
+    }
+    .Card{
+        h3, p{
+            font-size: 2em;
+        }
+    }
     //Rodapé
 }
 @media (min-width: 992px ){
@@ -310,5 +359,12 @@ main{
         padding: 50px 0px 100px 0px;
         margin: 0px 100px 0px 100px;
         font-size: 1.5em;
+    }
+    //Links Úteis
+    .Cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }

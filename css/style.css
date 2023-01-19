@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 /*
@@ -174,18 +175,15 @@ main .jsC {
   text-align: justify;
 }
 
-#lU {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #86db94;
+#LU {
+  background-color: #d3d3d3;
+  height: auto;
 }
 
-.containerL {
-  margin: 0 auto;
-}
 .containerL h2 {
   text-align: center;
+  padding-top: 20px;
+  margin-bottom: 30px;
 }
 
 .Card {
@@ -196,10 +194,12 @@ main .jsC {
 }
 .Card h3 {
   text-align: center;
+  margin-bottom: 20px;
 }
 .Card p a {
   text-decoration: none;
   color: #111111;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 768px) {
@@ -240,6 +240,45 @@ main .jsC {
     color: #E44D26;
   }
   main {
+    font-size: 2em;
+  }
+  #HTML img {
+    width: 300px;
+    height: 300px;
+  }
+  #HTML h2, #HTML h3 {
+    font-size: 1.7em;
+  }
+  #HTML p {
+    font-size: 1.1em;
+  }
+  #CSS img {
+    width: 300px;
+    height: 300px;
+  }
+  #CSS h2, #CSS h3 {
+    font-size: 1.7em;
+  }
+  #CSS p {
+    font-size: 1.1em;
+  }
+  #JS img {
+    width: 300px;
+    height: 300px;
+  }
+  #JS h2, #JS h3 {
+    font-size: 1.7em;
+  }
+  #JS p {
+    font-size: 1.1em;
+  }
+  .text {
+    font-size: 1.4em;
+  }
+  .containerL h2 {
+    font-size: 2.5em;
+  }
+  .Card h3, .Card p {
     font-size: 2em;
   }
 }
@@ -284,5 +323,11 @@ main .jsC {
     padding: 50px 0px 100px 0px;
     margin: 0px 100px 0px 100px;
     font-size: 1.5em;
+  }
+  .Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=style.css.map */
