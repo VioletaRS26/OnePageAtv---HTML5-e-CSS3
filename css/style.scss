@@ -32,7 +32,7 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
     text-decoration: none;
 }
 section {
-    height: 100vh;
+    height: 130vh;
 }
 .Botao{
     text-decoration: none;
@@ -42,6 +42,13 @@ section {
     background-color: $black;
     padding: 10px 40px;
     border-radius: 25px;
+}
+//topo do site
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
 }
 
 //First Mobile
@@ -217,7 +224,7 @@ main{
 //Rodapé
 footer{
     background-color: $black;
-    height: 10vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

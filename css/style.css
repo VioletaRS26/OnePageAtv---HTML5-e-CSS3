@@ -20,7 +20,7 @@ xxl: 2000px   //Desktops com ultra alta definição QHD e UHD
 }
 
 section {
-  height: 100vh;
+  height: 130vh;
 }
 
 .Botao {
@@ -31,6 +31,12 @@ section {
   background-color: #111111;
   padding: 10px 40px;
   border-radius: 25px;
+}
+
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
 }
 
 header {
@@ -204,7 +210,7 @@ main .jsC {
 
 footer {
   background-color: #111111;
-  height: 10vh;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
